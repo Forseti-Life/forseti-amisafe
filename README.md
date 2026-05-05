@@ -1,7 +1,6 @@
 # AmISafe - Crime Monitoring & Analytics System
 
-**Last Updated:** February 6, 2026  
-**🎉 RESOLUTION 13 ULTRA-PRECISION DRUPAL INTEGRATION COMPLETE**
+Standalone Drupal module repo for AmISafe crime monitoring, geospatial analytics, and safety-facing dashboards.
 
 ## Overview
 The AmISafe module is a comprehensive crime monitoring and spatial analysis system that provides **ultra-fine spatial precision** crime data visualization using **Resolution 13 H3 geospatial analysis** with room-level (44m²) precision, interactive filtering, and professional analytics interface.
