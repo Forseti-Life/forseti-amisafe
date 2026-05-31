@@ -278,7 +278,7 @@ class ApiController extends ControllerBase {
       $citywide_query = $database->select('amisafe_h3_aggregated', 'h');
       $citywide_query->addField('h', 'incident_count');
       $citywide_query->condition('h3_resolution', 5);
-      $citywide_query->condition('h3_index', '852a134bfffffff'); // Philadelphia citywide
+      $citywide_query->condition('h3_index', '852a134bfffffff'); // Citywide hexagon (Resolution 5)
       $total_crimes = $citywide_query->execute()->fetchField() ?: 0;
       
       // Build resolution breakdown with precision metadata (including resolution 5)
@@ -606,7 +606,7 @@ class ApiController extends ControllerBase {
         ],
         'meta' => [
           'fallback' => true,
-          'error' => 'Using simulated data for Philadelphia 2085',
+          'error' => 'Using simulated data (developer mode)',
         ],
       ]);
     }
